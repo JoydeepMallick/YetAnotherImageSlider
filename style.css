@@ -1,0 +1,45 @@
+.slider{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider img{
+    width: 100%;
+    display: none;
+}
+
+img.displaySlide{
+    display: block;
+    animation-name : fade;
+    animation-duration: 1.5s;
+}
+
+.slider button{
+    position: absolute;
+    top: 50%;
+    padding: 10px 15px;
+    transform: translateY(-50%); 
+    font-size: 1.5rem;
+    background-color: hsla(209, 100%, 5%, 0.352);
+    color: aliceblue;
+    border: none;
+    cursor: pointer;
+}
+
+#prev{
+    left: 0;
+    /* align to left */
+}
+
+#next{
+    right: 0;
+    /* align to right */
+}
+
+
+@keyframes fade{
+    from {opacity: 0.5}
+    to {opacity: 1}
+}
